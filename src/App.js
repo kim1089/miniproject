@@ -23,7 +23,7 @@ function App() {
   };
 
   const updateUserData = (updatedData) => {
-    setUserData(updatedData);  // Update the global userData
+    setUserData(updatedData);  
   };
 
   return (
