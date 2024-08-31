@@ -7,7 +7,7 @@ function Game2() {
   const dispatch = useDispatch();
 
   const handleCoinDecrease = () => {
-    dispatch(updateUserCoin(-1)); // Decrease coin by 1
+    dispatch(updateUserCoin(-1));
     axios.post('http://localhost:3001/update-coin', {
       username: userData.username,
       coin: userData.coin - 1,
@@ -16,7 +16,6 @@ function Game2() {
 
   return (
     <div>
-      {/* Game logic here */}
       <button onClick={handleCoinDecrease}>Decrease Coin</button>
     </div>
   );
